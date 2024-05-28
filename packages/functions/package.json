@@ -1,0 +1,21 @@
+{
+  "name": "@sst-app/functions",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit",
+    "build": "esbuild ./index.ts --bundle --minify --sourcemap --platform=node --target=es2020 --outfile=dist/index.js '--external:math' '--external:logger'"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.138",
+    "@types/node": "^20.12.12",
+    "@types/uuid": "^9.0.8",
+    "sst": "^2.42.0",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.5",
+    "uuid": "^9.0.1"
+  }
+}

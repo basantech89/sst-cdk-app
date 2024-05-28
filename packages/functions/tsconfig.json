@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "ES2020",
+    "baseUrl": ".",
+    "paths": {
+      "@sst-app/core/*": ["../core/src/*"],
+      "logger": ["../layers/logger"],
+      "math": ["../layers/math/math"]
+    }
+  }
+}

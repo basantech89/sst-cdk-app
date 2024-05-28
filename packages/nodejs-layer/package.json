@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-layer",
+  "version": "1.0.0",
+  "main": "./dist/bundle.esm.js",
+  "module": "./dist/bundle.esm.js",
+  "typings": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "rollup --configPlugin @rollup/plugin-typescript -c",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
